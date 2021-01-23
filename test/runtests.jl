@@ -2,6 +2,7 @@ include("tutorial.jl")
 include("fix133.jl")
 include("MPB_wrapper.jl")
 include("MOI_wrapper.jl")
+include("exceptions.jl")
 
 using NLopt
 using Test
@@ -22,4 +23,3 @@ end
     )
     @test_throws err opt.initial_step
 end
-
